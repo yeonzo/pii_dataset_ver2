@@ -1,0 +1,141 @@
+{
+  "relation_checks": [
+    {
+      "relation_id": "R1",
+      "relation_supported": true,
+      "direction_supported": true,
+      "attribution_supported": true,
+      "observed_privacy": "PII",
+      "reason": "문장 S29에서 '환자 황영호는 자신의 생년월일 1963/09/28을 ... 제공하며, 이는 환자의 신원 확인과 치료 기록 관리에 사용된다.'고 명시하여 개인(황영호)과 생년월일 사이의 정보 제공·관리 관계가 성립하고, 이는 특정 개인의 신원 식별자에 해당하므로 PII로 판정됨."
+    },
+    {
+      "relation_id": "R2",
+      "relation_supported": true,
+      "direction_supported": true,
+      "attribution_supported": true,
+      "observed_privacy": "NON_PII",
+      "reason": "문장 S30에서 '공공기관 가온의료원은 주소 정보를 ... 이용하여 지역 사회의 건강 서비스 제공 및 정책 수립에 활용한다.'고 하여 기관(가온의료원)이 그 주소 정보를 서비스·정책 목적으로 활용한다는 정보 거버넌스적 관계가 성립한다. 기관 주소는 기관 공용 정보로서 NON_PII로 분류됨."
+    },
+    {
+      "relation_id": "R3",
+      "relation_supported": true,
+      "direction_supported": true,
+      "attribution_supported": true,
+      "observed_privacy": "NON_PII",
+      "reason": "문장 S31에서 '공공기관 새봄종합병원의 주소 ... 시민들이 접근할 수 있도록 안내하기 위한 것이다.'라고 하여 기관(새봄종합병원)과 그 주소 사이에 문서상 활용·안내 목적의 정보 관계가 성립한다. 기관 주소는 공용 정보로 NON_PII로 판정됨."
+    }
+  ],
+  "unplanned_relations": [],
+  "format_adherence": {
+    "document_format_supported": true,
+    "layout_variant_supported": true,
+    "viewpoint_supported": true,
+    "section_roles_supported": true,
+    "reason": "문서는 form 형식으로 구성되어 있으며 layout_variant와 patient_response 관점이 일관되게 적용되어 있고, 요구된 섹션(spec_1~spec_4)이 질문·응답 형태로 존재함."
+  },
+  "quality": {
+    "overall": "상",
+    "scores": {
+      "consistency": "상",
+      "fluency": "상",
+      "suitability": "상"
+    },
+    "reason": "문서 전반에서 환자 응답 관점이 일관되며 문장 구성과 흐름이 자연스럽고, 문서 목적(문진표)에 적합한 질문·응답 항목이 모두 충족됨."
+  },
+  "text_issues": [],
+  "spec_checks": {
+    "author": {
+      "passed": true,
+      "evidence_sentence_ids": [
+        "S3",
+        "S12",
+        "S17",
+        "S24",
+        "S29"
+      ],
+      "reason": "응답 문장들이 '환자'의 관점으로 직접 기재되어 있으며 S29에서 환자 신원 제공 문구가 있어 문서의 화자·역할이 명확함."
+    },
+    "scope": {
+      "passed": true,
+      "evidence_sentence_ids": [
+        "S17",
+        "S36",
+        "S12",
+        "S29"
+      ],
+      "reason": "복용약·과거력·증상 등의 응답이 상황별로 일관되게 기재되어 있고 문서 내에서 진단·처방을 확정하지 않음(증상·약물 목적 등 기술에 그침)."
+    },
+    "spec_1": {
+      "passed": true,
+      "evidence_sentence_ids": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9"
+      ],
+      "reason": "현재 증상 섹션에 시작 시점(S3), 빈도(S3), 강도(S5), 악화·완화 조건(S7), 기능 제한(S9)에 관한 질문과 구체적 응답이 쌍으로 존재함."
+    },
+    "spec_2": {
+      "passed": true,
+      "evidence_sentence_ids": [
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S32",
+        "S33",
+        "S34",
+        "S35"
+      ],
+      "reason": "과거력 섹션에 기저질환(고혈압, S12), 수술 이력(S14), 치료와 현재 상태(S12,S33) 등 요구된 항목들이 질문·응답 형태로 작성되어 있음."
+    },
+    "spec_3": {
+      "passed": true,
+      "evidence_sentence_ids": [
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S36",
+        "S37",
+        "S38"
+      ],
+      "reason": "약물·알레르기 섹션에 복용약의 종류 및 주기(S17,S36,S37), 복용 목적(S19), 알레르기 여부(S21,S39) 등이 질문과 응답으로 구체적으로 기재되어 있음."
+    },
+    "spec_4": {
+      "passed": true,
+      "evidence_sentence_ids": [
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S26",
+        "S27",
+        "S28",
+        "S41",
+        "S43",
+        "S45"
+      ],
+      "reason": "생활습관 섹션에 수면·식사·활동의 구체적 패턴(S24,S41,S43)과 최근 변화(S28,S44) 및 추가 사항(S45)이 포함되어 있음."
+    },
+    "complete": {
+      "passed": true,
+      "evidence_sentence_ids": [
+        "S3",
+        "S12",
+        "S17",
+        "S24",
+        "S29"
+      ],
+      "reason": "각 주요 질문에 실질적 응답이 존재하고 '없음' 또는 상태 표기가 구분되어 있으며(예: 알레르기 없음 S21), 섹션 간 모순도 발견되지 않음."
+    }
+  }
+}

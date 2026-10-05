@@ -1,0 +1,205 @@
+{
+  "type": "object",
+  "properties": {
+    "draft_version": {
+      "type": "integer"
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sentence_id": {
+            "type": "string",
+            "pattern": "^S[1-9][0-9]*$"
+          },
+          "section_id": {
+            "type": "string",
+            "enum": [
+              "spec_1",
+              "spec_2",
+              "spec_3",
+              "spec_4"
+            ]
+          },
+          "scene_id": {
+            "type": "string",
+            "enum": [
+              "SC1",
+              "SC2",
+              "SC3",
+              "SC4"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "prose",
+              "key_value",
+              "question",
+              "answer",
+              "list_item",
+              "numbered_list",
+              "heading"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "pattern": "^(?:[^<>]|<NAME:E1>|<DATE_OF_BIRTH:E2>|<WORKPLACE:E3>|<ADDRESS:E4>|<WORKPLACE:E5>|<ADDRESS:E6>|<REF:C[1-9][0-9]*>)*$"
+          }
+        },
+        "required": [
+          "sentence_id",
+          "section_id",
+          "scene_id",
+          "kind",
+          "text"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 26,
+      "maxItems": 69
+    },
+    "refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ref_id": {
+            "type": "string",
+            "pattern": "^C[1-9][0-9]*$"
+          },
+          "entity_id": {
+            "type": "string",
+            "enum": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5",
+              "E6"
+            ]
+          },
+          "surface": {
+            "type": "string",
+            "pattern": "^[^<>\\r\\n]+$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "role",
+              "demonstrative"
+            ]
+          }
+        },
+        "required": [
+          "ref_id",
+          "entity_id",
+          "surface",
+          "kind"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "relation_evidence": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "relation_id": {
+                "type": "string",
+                "enum": [
+                  "R1"
+                ]
+              },
+              "evidence_groups": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^S[1-9][0-9]*$"
+                  },
+                  "minItems": 1
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "relation_id",
+              "evidence_groups"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "relation_id": {
+                "type": "string",
+                "enum": [
+                  "R2"
+                ]
+              },
+              "evidence_groups": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^S[1-9][0-9]*$"
+                  },
+                  "minItems": 1
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "relation_id",
+              "evidence_groups"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "relation_id": {
+                "type": "string",
+                "enum": [
+                  "R3"
+                ]
+              },
+              "evidence_groups": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^S[1-9][0-9]*$"
+                  },
+                  "minItems": 1
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "relation_id",
+              "evidence_groups"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 3
+    }
+  },
+  "required": [
+    "draft_version",
+    "segments",
+    "refs",
+    "relation_evidence"
+  ],
+  "additionalProperties": false
+}

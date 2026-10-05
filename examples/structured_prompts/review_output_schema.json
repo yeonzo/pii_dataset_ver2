@@ -1,0 +1,758 @@
+{
+  "type": "object",
+  "properties": {
+    "relation_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relation_id": {
+            "type": "string",
+            "enum": [
+              "R1",
+              "R2",
+              "R3"
+            ]
+          },
+          "relation_supported": {
+            "type": "boolean"
+          },
+          "direction_supported": {
+            "type": "boolean"
+          },
+          "attribution_supported": {
+            "type": "boolean"
+          },
+          "observed_privacy": {
+            "type": "string",
+            "enum": [
+              "PII",
+              "NON_PII",
+              "AMBIGUOUS"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "relation_id",
+          "relation_supported",
+          "direction_supported",
+          "attribution_supported",
+          "observed_privacy",
+          "reason"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "unplanned_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5",
+              "E6"
+            ]
+          },
+          "target": {
+            "type": "string",
+            "enum": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5",
+              "E6"
+            ]
+          },
+          "relation": {
+            "type": "string"
+          },
+          "observed_privacy": {
+            "type": "string",
+            "enum": [
+              "PII",
+              "NON_PII",
+              "AMBIGUOUS"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "target",
+          "relation",
+          "observed_privacy",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "format_adherence": {
+      "type": "object",
+      "properties": {
+        "document_format_supported": {
+          "type": "boolean"
+        },
+        "layout_variant_supported": {
+          "type": "boolean"
+        },
+        "viewpoint_supported": {
+          "type": "boolean"
+        },
+        "section_roles_supported": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "document_format_supported",
+        "layout_variant_supported",
+        "viewpoint_supported",
+        "section_roles_supported",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "overall": {
+          "type": "string",
+          "enum": [
+            "상",
+            "중",
+            "하"
+          ]
+        },
+        "scores": {
+          "type": "object",
+          "properties": {
+            "consistency": {
+              "type": "string",
+              "enum": [
+                "상",
+                "중",
+                "하"
+              ]
+            },
+            "fluency": {
+              "type": "string",
+              "enum": [
+                "상",
+                "중",
+                "하"
+              ]
+            },
+            "suitability": {
+              "type": "string",
+              "enum": [
+                "상",
+                "중",
+                "하"
+              ]
+            }
+          },
+          "required": [
+            "consistency",
+            "fluency",
+            "suitability"
+          ],
+          "additionalProperties": false
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "overall",
+        "scores",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "text_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "fluency",
+              "consistency",
+              "format"
+            ]
+          },
+          "sentence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(?:S1|S2|S3|S4|S5|S6|S7|S8|S9|S29|S10|S11|S12|S13|S14|S32|S33|S34|S35|S15|S16|S17|S18|S19|S20|S21|S30|S36|S37|S38|S39|S40|S22|S23|S24|S25|S26|S27|S28|S31|S41|S42|S43|S44|S45)$"
+            }
+          },
+          "relation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "R1",
+                "R2",
+                "R3"
+              ]
+            }
+          },
+          "reason": {
+            "type": "string"
+          },
+          "fix_instruction": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "sentence_ids",
+          "relation_ids",
+          "reason",
+          "fix_instruction"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "spec_checks": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "object",
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "evidence_sentence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6",
+                  "S7",
+                  "S8",
+                  "S9",
+                  "S29",
+                  "S10",
+                  "S11",
+                  "S12",
+                  "S13",
+                  "S14",
+                  "S32",
+                  "S33",
+                  "S34",
+                  "S35",
+                  "S15",
+                  "S16",
+                  "S17",
+                  "S18",
+                  "S19",
+                  "S20",
+                  "S21",
+                  "S30",
+                  "S36",
+                  "S37",
+                  "S38",
+                  "S39",
+                  "S40",
+                  "S22",
+                  "S23",
+                  "S24",
+                  "S25",
+                  "S26",
+                  "S27",
+                  "S28",
+                  "S31",
+                  "S41",
+                  "S42",
+                  "S43",
+                  "S44",
+                  "S45"
+                ]
+              },
+              "maxItems": 12
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "passed",
+            "evidence_sentence_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "scope": {
+          "type": "object",
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "evidence_sentence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6",
+                  "S7",
+                  "S8",
+                  "S9",
+                  "S29",
+                  "S10",
+                  "S11",
+                  "S12",
+                  "S13",
+                  "S14",
+                  "S32",
+                  "S33",
+                  "S34",
+                  "S35",
+                  "S15",
+                  "S16",
+                  "S17",
+                  "S18",
+                  "S19",
+                  "S20",
+                  "S21",
+                  "S30",
+                  "S36",
+                  "S37",
+                  "S38",
+                  "S39",
+                  "S40",
+                  "S22",
+                  "S23",
+                  "S24",
+                  "S25",
+                  "S26",
+                  "S27",
+                  "S28",
+                  "S31",
+                  "S41",
+                  "S42",
+                  "S43",
+                  "S44",
+                  "S45"
+                ]
+              },
+              "maxItems": 12
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "passed",
+            "evidence_sentence_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "spec_1": {
+          "type": "object",
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "evidence_sentence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6",
+                  "S7",
+                  "S8",
+                  "S9",
+                  "S29",
+                  "S10",
+                  "S11",
+                  "S12",
+                  "S13",
+                  "S14",
+                  "S32",
+                  "S33",
+                  "S34",
+                  "S35",
+                  "S15",
+                  "S16",
+                  "S17",
+                  "S18",
+                  "S19",
+                  "S20",
+                  "S21",
+                  "S30",
+                  "S36",
+                  "S37",
+                  "S38",
+                  "S39",
+                  "S40",
+                  "S22",
+                  "S23",
+                  "S24",
+                  "S25",
+                  "S26",
+                  "S27",
+                  "S28",
+                  "S31",
+                  "S41",
+                  "S42",
+                  "S43",
+                  "S44",
+                  "S45"
+                ]
+              },
+              "maxItems": 12
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "passed",
+            "evidence_sentence_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "spec_2": {
+          "type": "object",
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "evidence_sentence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6",
+                  "S7",
+                  "S8",
+                  "S9",
+                  "S29",
+                  "S10",
+                  "S11",
+                  "S12",
+                  "S13",
+                  "S14",
+                  "S32",
+                  "S33",
+                  "S34",
+                  "S35",
+                  "S15",
+                  "S16",
+                  "S17",
+                  "S18",
+                  "S19",
+                  "S20",
+                  "S21",
+                  "S30",
+                  "S36",
+                  "S37",
+                  "S38",
+                  "S39",
+                  "S40",
+                  "S22",
+                  "S23",
+                  "S24",
+                  "S25",
+                  "S26",
+                  "S27",
+                  "S28",
+                  "S31",
+                  "S41",
+                  "S42",
+                  "S43",
+                  "S44",
+                  "S45"
+                ]
+              },
+              "maxItems": 12
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "passed",
+            "evidence_sentence_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "spec_3": {
+          "type": "object",
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "evidence_sentence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6",
+                  "S7",
+                  "S8",
+                  "S9",
+                  "S29",
+                  "S10",
+                  "S11",
+                  "S12",
+                  "S13",
+                  "S14",
+                  "S32",
+                  "S33",
+                  "S34",
+                  "S35",
+                  "S15",
+                  "S16",
+                  "S17",
+                  "S18",
+                  "S19",
+                  "S20",
+                  "S21",
+                  "S30",
+                  "S36",
+                  "S37",
+                  "S38",
+                  "S39",
+                  "S40",
+                  "S22",
+                  "S23",
+                  "S24",
+                  "S25",
+                  "S26",
+                  "S27",
+                  "S28",
+                  "S31",
+                  "S41",
+                  "S42",
+                  "S43",
+                  "S44",
+                  "S45"
+                ]
+              },
+              "maxItems": 12
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "passed",
+            "evidence_sentence_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "spec_4": {
+          "type": "object",
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "evidence_sentence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6",
+                  "S7",
+                  "S8",
+                  "S9",
+                  "S29",
+                  "S10",
+                  "S11",
+                  "S12",
+                  "S13",
+                  "S14",
+                  "S32",
+                  "S33",
+                  "S34",
+                  "S35",
+                  "S15",
+                  "S16",
+                  "S17",
+                  "S18",
+                  "S19",
+                  "S20",
+                  "S21",
+                  "S30",
+                  "S36",
+                  "S37",
+                  "S38",
+                  "S39",
+                  "S40",
+                  "S22",
+                  "S23",
+                  "S24",
+                  "S25",
+                  "S26",
+                  "S27",
+                  "S28",
+                  "S31",
+                  "S41",
+                  "S42",
+                  "S43",
+                  "S44",
+                  "S45"
+                ]
+              },
+              "maxItems": 12
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "passed",
+            "evidence_sentence_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "complete": {
+          "type": "object",
+          "properties": {
+            "passed": {
+              "type": "boolean"
+            },
+            "evidence_sentence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1",
+                  "S2",
+                  "S3",
+                  "S4",
+                  "S5",
+                  "S6",
+                  "S7",
+                  "S8",
+                  "S9",
+                  "S29",
+                  "S10",
+                  "S11",
+                  "S12",
+                  "S13",
+                  "S14",
+                  "S32",
+                  "S33",
+                  "S34",
+                  "S35",
+                  "S15",
+                  "S16",
+                  "S17",
+                  "S18",
+                  "S19",
+                  "S20",
+                  "S21",
+                  "S30",
+                  "S36",
+                  "S37",
+                  "S38",
+                  "S39",
+                  "S40",
+                  "S22",
+                  "S23",
+                  "S24",
+                  "S25",
+                  "S26",
+                  "S27",
+                  "S28",
+                  "S31",
+                  "S41",
+                  "S42",
+                  "S43",
+                  "S44",
+                  "S45"
+                ]
+              },
+              "maxItems": 12
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "passed",
+            "evidence_sentence_ids",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "author",
+        "scope",
+        "spec_1",
+        "spec_2",
+        "spec_3",
+        "spec_4",
+        "complete"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "relation_checks",
+    "unplanned_relations",
+    "format_adherence",
+    "quality",
+    "text_issues",
+    "spec_checks"
+  ],
+  "additionalProperties": false
+}

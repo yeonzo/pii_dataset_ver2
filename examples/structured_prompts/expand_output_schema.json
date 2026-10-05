@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "section_id": {
+      "type": "string",
+      "enum": [
+        "spec_2"
+      ]
+    },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2,
+      "maxItems": 30
+    }
+  },
+  "required": [
+    "section_id",
+    "sentences"
+  ],
+  "additionalProperties": false
+}

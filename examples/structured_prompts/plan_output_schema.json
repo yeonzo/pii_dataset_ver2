@@ -1,0 +1,236 @@
+{
+  "type": "object",
+  "properties": {
+    "relation_contexts": {
+      "type": "object",
+      "properties": {
+        "R1": {
+          "type": "object",
+          "properties": {
+            "context_reason": {
+              "type": "string"
+            },
+            "scene_id": {
+              "type": "string",
+              "enum": [
+                "SC1",
+                "SC2",
+                "SC3",
+                "SC4"
+              ]
+            }
+          },
+          "required": [
+            "context_reason",
+            "scene_id"
+          ],
+          "additionalProperties": false
+        },
+        "R2": {
+          "type": "object",
+          "properties": {
+            "context_reason": {
+              "type": "string"
+            },
+            "scene_id": {
+              "type": "string",
+              "enum": [
+                "SC1",
+                "SC2",
+                "SC3",
+                "SC4"
+              ]
+            }
+          },
+          "required": [
+            "context_reason",
+            "scene_id"
+          ],
+          "additionalProperties": false
+        },
+        "R3": {
+          "type": "object",
+          "properties": {
+            "context_reason": {
+              "type": "string"
+            },
+            "scene_id": {
+              "type": "string",
+              "enum": [
+                "SC1",
+                "SC2",
+                "SC3",
+                "SC4"
+              ]
+            }
+          },
+          "required": [
+            "context_reason",
+            "scene_id"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "additionalProperties": false
+    },
+    "scene_notes": {
+      "type": "object",
+      "properties": {
+        "SC1": {
+          "type": "object",
+          "properties": {
+            "purpose": {
+              "type": "string"
+            },
+            "content_facts": {
+              "type": "object",
+              "properties": {
+                "F1": {
+                  "type": "string"
+                },
+                "F2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "F1",
+                "F2"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "purpose",
+            "content_facts"
+          ],
+          "additionalProperties": false
+        },
+        "SC2": {
+          "type": "object",
+          "properties": {
+            "purpose": {
+              "type": "string"
+            },
+            "content_facts": {
+              "type": "object",
+              "properties": {
+                "F1": {
+                  "type": "string"
+                },
+                "F2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "F1",
+                "F2"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "purpose",
+            "content_facts"
+          ],
+          "additionalProperties": false
+        },
+        "SC3": {
+          "type": "object",
+          "properties": {
+            "purpose": {
+              "type": "string"
+            },
+            "content_facts": {
+              "type": "object",
+              "properties": {
+                "F1": {
+                  "type": "string"
+                },
+                "F2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "F1",
+                "F2"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "purpose",
+            "content_facts"
+          ],
+          "additionalProperties": false
+        },
+        "SC4": {
+          "type": "object",
+          "properties": {
+            "purpose": {
+              "type": "string"
+            },
+            "content_facts": {
+              "type": "object",
+              "properties": {
+                "F1": {
+                  "type": "string"
+                },
+                "F2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "F1",
+                "F2"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "purpose",
+            "content_facts"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "SC1",
+        "SC2",
+        "SC3",
+        "SC4"
+      ],
+      "additionalProperties": false
+    },
+    "document_case": {
+      "type": "object",
+      "properties": {
+        "situation": {
+          "type": "string"
+        },
+        "scope_decisions": {
+          "type": "string"
+        },
+        "end_state": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "situation",
+        "scope_decisions",
+        "end_state"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "relation_contexts",
+    "scene_notes",
+    "document_case"
+  ],
+  "additionalProperties": false
+}

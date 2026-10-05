@@ -1,0 +1,1670 @@
+{
+  "upstream_commit": "deaa2f6403a22253c9ebc70fe9ead5563d5257bd",
+  "domains": {
+    "career_education": {
+      "resume_form": {
+        "label": "이력서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "EMAIL",
+          "SCHOOL",
+          "MAJOR",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "cover_letter": {
+        "label": "자기소개서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "SCHOOL",
+          "MAJOR",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION",
+          "EMAIL"
+        ]
+      },
+      "career_statement": {
+        "label": "경력기술서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "SCHOOL",
+          "MAJOR",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "job_application": {
+        "label": "입사지원서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "EMAIL",
+          "SCHOOL",
+          "MAJOR",
+          "WORKPLACE",
+          "POSITION"
+        ]
+      },
+      "recommendation": {
+        "label": "추천서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "SCHOOL",
+          "MAJOR",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE"
+        ]
+      },
+      "admission_application": {
+        "label": "입학·편입 원서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "DATE_OF_BIRTH",
+          "AGE",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "EMAIL",
+          "SCHOOL",
+          "MAJOR"
+        ]
+      },
+      "enrollment_certificate": {
+        "label": "재학·졸업 증명서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "SCHOOL",
+          "MAJOR"
+        ]
+      },
+      "transcript": {
+        "label": "성적증명서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "SCHOOL",
+          "MAJOR"
+        ]
+      },
+      "scholarship_application": {
+        "label": "장학금 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "SCHOOL",
+          "MAJOR",
+          "BANK_ACCOUNT_NUMBER",
+          "MOBILE_PHONE",
+          "EMAIL"
+        ]
+      },
+      "leave_return": {
+        "label": "휴학·복학 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "SCHOOL",
+          "MAJOR",
+          "MOBILE_PHONE"
+        ]
+      }
+    },
+    "contract": {
+      "lease": {
+        "label": "부동산 임대차계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "rental": {
+        "label": "물품 임대차계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "construction": {
+        "label": "공사도급계약서",
+        "category": "standard",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "loan": {
+        "label": "금전소비대차계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "investment": {
+        "label": "투자계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "shareholder": {
+        "label": "주주간 계약서",
+        "category": "standard",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "escrow": {
+        "label": "에스크로 계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "settlement": {
+        "label": "합의·정산 계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "service": {
+        "label": "용역계약서",
+        "category": "standard",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "sale": {
+        "label": "물품 매매계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "consign": {
+        "label": "위·수탁(위탁) 계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "joint_venture": {
+        "label": "합작투자계약서",
+        "category": "standard",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "franchise": {
+        "label": "프랜차이즈 가맹계약서",
+        "category": "standard",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "partnership": {
+        "label": "동업(조합)계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "agency": {
+        "label": "대리점 계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "distribution": {
+        "label": "유통·판매점 계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "advertising": {
+        "label": "광고 제작·집행 계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "maintenance": {
+        "label": "시설 유지보수계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "supply": {
+        "label": "원자재 공급계약서",
+        "category": "standard",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "transfer": {
+        "label": "영업양수도계약서",
+        "category": "standard",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "car_rental_short": {
+        "label": "단기 렌터카 대여 계약서",
+        "category": "car_rental",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "EMAIL",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "CARD_NUMBER",
+          "WORKPLACE"
+        ]
+      },
+      "car_rental_long": {
+        "label": "장기 렌터카 대여 계약서",
+        "category": "car_rental",
+        "length_range": [
+          1800,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "EMAIL",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "CARD_NUMBER",
+          "WORKPLACE"
+        ]
+      },
+      "car_rental_corp": {
+        "label": "법인 차량 대여 계약서",
+        "category": "car_rental",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "EMAIL",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "CARD_NUMBER",
+          "WORKPLACE"
+        ]
+      },
+      "accident_rear": {
+        "label": "추돌사고 합의서",
+        "category": "traffic_accident",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "accident_intersection": {
+        "label": "교차로 충돌 합의서",
+        "category": "traffic_accident",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "accident_parking": {
+        "label": "주차장 접촉사고 합의서",
+        "category": "traffic_accident",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "accident_pedestrian": {
+        "label": "보행자 사고 합의서",
+        "category": "traffic_accident",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "accident_single": {
+        "label": "단독사고 자기부담금 확인서",
+        "category": "traffic_accident",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "overseas_visa": {
+        "label": "비자 발급 신청 확인서",
+        "category": "overseas_dispatch",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "PASSPORT_NUMBER",
+          "ADDRESS",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "overseas_assignment": {
+        "label": "해외파견 동의서·계약서",
+        "category": "overseas_dispatch",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "PASSPORT_NUMBER",
+          "ADDRESS",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "overseas_trip": {
+        "label": "해외 출장 신청서",
+        "category": "overseas_dispatch",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "PASSPORT_NUMBER",
+          "ADDRESS",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "employment": {
+        "label": "근로계약서",
+        "category": "employment",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "freelance": {
+        "label": "프리랜서 도급계약서",
+        "category": "employment",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "consulting": {
+        "label": "컨설팅 계약서",
+        "category": "employment",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "nda": {
+        "label": "비밀유지계약서(NDA)",
+        "category": "ip",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "EMAIL",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "license": {
+        "label": "소프트웨어 라이선스계약서",
+        "category": "ip",
+        "length_range": [
+          1500,
+          2000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "EMAIL",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "it_outsourcing": {
+        "label": "IT 아웃소싱 계약서",
+        "category": "ip",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "EMAIL",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "research": {
+        "label": "공동연구개발계약서",
+        "category": "ip",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "EMAIL",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      },
+      "data_processing": {
+        "label": "개인정보 처리위탁 계약서",
+        "category": "ip",
+        "length_range": [
+          2000,
+          3000
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "EMAIL",
+          "TELEPHONE",
+          "MOBILE_PHONE",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION"
+        ]
+      }
+    },
+    "financial": {
+      "loan_application": {
+        "label": "대출 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "DATE_OF_BIRTH",
+          "AGE",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "card_application": {
+        "label": "신용카드 발급 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "EMAIL",
+          "WORKPLACE",
+          "DEPARTMENT",
+          "POSITION",
+          "CARD_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "account_opening": {
+        "label": "예금계좌 개설 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "EMAIL",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "insurance_subscription": {
+        "label": "보험 가입 청약서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "DATE_OF_BIRTH",
+          "AGE",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "EMAIL",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "wire_transfer": {
+        "label": "송금·이체 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "fraud_report": {
+        "label": "명의도용·보이스피싱 신고서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      }
+    },
+    "legal": {
+      "incident_report": {
+        "label": "사건 경위서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "legal_consultation": {
+        "label": "법률 상담 기록",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "complaint_filing": {
+        "label": "고소·고발장",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "damage_claim": {
+        "label": "손해배상 청구서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "witness_statement": {
+        "label": "목격자 진술서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "police_statement": {
+        "label": "경찰 진술서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "mediation_application": {
+        "label": "분쟁 조정 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "DRIVER_LICENSE_NUMBER",
+          "VEHICLE_NUMBER",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      }
+    },
+    "medical": {
+      "registration": {
+        "label": "진료 접수서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE"
+        ]
+      },
+      "questionnaire": {
+        "label": "문진표",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "MOBILE_PHONE"
+        ]
+      },
+      "health_checkup": {
+        "label": "건강검진 문진",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "WORKPLACE",
+          "ADDRESS",
+          "MOBILE_PHONE"
+        ]
+      },
+      "payment": {
+        "label": "수납·영수 접수",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "CARD_NUMBER",
+          "BANK_ACCOUNT_NUMBER",
+          "MOBILE_PHONE"
+        ]
+      },
+      "insurance_claim": {
+        "label": "실손의료보험 청구서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "RRN",
+          "DATE_OF_BIRTH",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "EMAIL",
+          "BANK_ACCOUNT_NUMBER"
+        ]
+      },
+      "telemedicine_consult": {
+        "label": "원격 진료 상담 기록지",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "MOBILE_PHONE",
+          "EMAIL"
+        ]
+      },
+      "checkup_result": {
+        "label": "건강검진 결과 통보서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "AGE",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "WORKPLACE",
+          "ADDRESS",
+          "MOBILE_PHONE"
+        ]
+      },
+      "surgery_consent": {
+        "label": "입원·수술 동의서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "DATE_OF_BIRTH",
+          "RRN",
+          "ADDRESS",
+          "MOBILE_PHONE",
+          "TELEPHONE"
+        ]
+      }
+    },
+    "support": {
+      "complaint_product": {
+        "label": "상품 민원 접수서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      },
+      "complaint_service": {
+        "label": "서비스 민원 접수서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      },
+      "support_ticket": {
+        "label": "고객지원 티켓",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      },
+      "refund_request": {
+        "label": "환불 요청 처리 기록",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      },
+      "delivery_issue": {
+        "label": "배송 문제 접수서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      },
+      "as_request": {
+        "label": "AS/수리 접수서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      },
+      "billing_dispute": {
+        "label": "요금 이의 신청서",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      },
+      "account_inquiry": {
+        "label": "계정 문의 처리 기록",
+        "category": "",
+        "length_range": [
+          1500,
+          2500
+        ],
+        "personal_types": [
+          "NAME",
+          "EMAIL",
+          "MOBILE_PHONE",
+          "TELEPHONE",
+          "ADDRESS",
+          "DATE_OF_BIRTH",
+          "BANK_ACCOUNT_NUMBER",
+          "CARD_NUMBER"
+        ]
+      }
+    }
+  },
+  "topics": {
+    "career_education": [
+      "재고관리 자동화",
+      "고객 이탈률 개선",
+      "신규 채널 런칭",
+      "비용 절감 TF",
+      "레거시 시스템 리팩터링",
+      "데이터 대시보드 구축",
+      "품질 불량률 감소",
+      "온보딩 프로세스 개선",
+      "A/B 테스트 설계",
+      "협업 툴 도입",
+      "결제 전환율 개선",
+      "서버 다운타임 감소",
+      "API 응답속도 최적화",
+      "배포 자동화 파이프라인 구축",
+      "고객센터 응대 시간 단축",
+      "신제품 출시 PM",
+      "매출 성장 기여",
+      "운영 비용 절감",
+      "팀 빌딩 및 채용",
+      "글로벌 시장 진출 기여",
+      "데이터 파이프라인 구축",
+      "머신러닝 모델 배포",
+      "보안 취약점 패치",
+      "리텐션 지표 개선",
+      "앱 크래시율 감소",
+      "코드 커버리지 향상",
+      "기술 부채 해소",
+      "마이크로서비스 전환",
+      "CI/CD 도입",
+      "사용자 인터뷰 설계",
+      "퍼소나 기반 UX 개선",
+      "동아리 회장 경험",
+      "교내 공모전 수상",
+      "해외 교환학생",
+      "봉사활동 기획",
+      "현장 실습",
+      "캡스톤 프로젝트",
+      "스타트업 인턴",
+      "논문 보조 연구",
+      "해커톤 입상",
+      "오픈소스 기여",
+      "교내 멘토링 프로그램",
+      "학술 발표",
+      "전공 연구실 연구",
+      "교내 튜터링 활동",
+      "대학원 진학 후 중퇴",
+      "복수전공 이수",
+      "편입 경험",
+      "다국어 커뮤니케이션",
+      "PMP 자격 취득",
+      "CFA 1차 합격",
+      "AWS 자격증 취득",
+      "정보처리기사 취득",
+      "SQL 쿼리 최적화 경험",
+      "영어 발표 경험",
+      "일어 비즈니스 회화",
+      "중어 통번역 경험"
+    ],
+    "contract": [
+      "계약 기간과 갱신",
+      "계약의 효력 발생일",
+      "이행 기한과 납기",
+      "중도 해지 절차",
+      "해지 사유와 효과",
+      "계약 종료 후 처리",
+      "대금/임금 지급 방법",
+      "지급 기일과 지연이자",
+      "선급금과 잔금 처리",
+      "에스크로 및 공탁",
+      "세금계산서 발행",
+      "환율 및 통화 조항",
+      "위약금과 손해배상 범위",
+      "면책 조항",
+      "보증 및 하자담보",
+      "보험 가입 의무",
+      "불가항력(force majeure)",
+      "책임 한도액",
+      "비밀유지 의무",
+      "지식재산권 귀속",
+      "저작권 양도",
+      "특허 공동출원",
+      "기밀정보의 정의",
+      "정보 반환·파기 의무",
+      "재하도급 금지",
+      "전속 조항",
+      "경업금지 의무",
+      "스카우트 금지",
+      "당사자 변경 및 양도 제한",
+      "대리인·수권 범위",
+      "관할 법원",
+      "중재 합의",
+      "준거법",
+      "분쟁 조정 절차",
+      "보증금과 반환",
+      "원상복구 의무",
+      "임차인 수선 의무",
+      "부동산 검수와 하자보수",
+      "전대차 금지",
+      "개인정보 처리",
+      "데이터 보안 기준",
+      "컴플라이언스 준수 의무",
+      "재택/근무 형태",
+      "근로 조건 변경 절차"
+    ],
+    "financial": {
+      "loan_application": "대출 신청서",
+      "card_application": "신용카드 발급 신청서",
+      "account_opening": "예금계좌 개설 신청서",
+      "insurance_subscription": "보험 가입 청약서",
+      "wire_transfer": "송금·이체 신청서",
+      "fraud_report": "명의도용·보이스피싱 신고서"
+    },
+    "legal": [
+      "CCTV 영상 확보로 가해 행위 입증",
+      "목격자 3인 진술서 첨부",
+      "진단서상 전치 6주 상해 확인",
+      "피해 발생 당일 112 신고 접수",
+      "합의 시도 2회 거부 후 고소 결정",
+      "임금 명세서 6개월치 미지급 내역",
+      "SNS 캡처본 명예훼손 증거 확보",
+      "계약서 미작성 구두 약정 분쟁",
+      "공사 중 지반침하로 인한 건물 균열",
+      "허위 광고 내용 공정위 신고 병행",
+      "전세 보증금 반환 지연 내용증명 발송",
+      "의료기록 열람 거부로 인한 증거 확보 어려움",
+      "직장 내 괴롭힘 인사팀 신고 후 보복 발령",
+      "특허 기술 무단 사용 확인서 발급",
+      "보험사 과실 비율 40:60 산정 불복",
+      "하자 보수 요청 6회 무응답",
+      "온라인 사기 계좌 지급정지 신청",
+      "저작권 침해 경고장 발송 후 미이행",
+      "채용 과정 개인정보 무단 제3자 제공",
+      "퇴직금 미지급 노동청 진정 접수"
+    ],
+    "medical": [
+      "내과",
+      "정형외과",
+      "이비인후과",
+      "피부과",
+      "안과",
+      "치과",
+      "가정의학과",
+      "산부인과",
+      "소아청소년과",
+      "정신건강의학과",
+      "외과",
+      "비뇨의학과",
+      "재활의학과",
+      "신경과",
+      "영상의학과",
+      "마취통증의학과"
+    ],
+    "support": [
+      "제품 수령 후 72시간 내 결함 발견",
+      "배송 추적 번호 미발급으로 인한 분쟁",
+      "동일 상품 이중 결제 발생",
+      "구독 해지 신청 후 재청구",
+      "AS 기사 방문 예약 3회 불이행",
+      "상품 설명과 실물 색상 불일치",
+      "포장 파손으로 내용물 손상 수령",
+      "쿠폰 자동 소멸 후 복구 요청",
+      "계정 도용으로 무단 주문 발생",
+      "교환 배송 중 분실 사고",
+      "오배송 수령 후 반품 지연",
+      "보증 기간 내 무상 수리 거부",
+      "할인 이벤트 가격 소급 적용 요청",
+      "결제 취소 후 환불 14일 초과",
+      "앱 오류로 주문 중복 처리",
+      "배달 음식 이물질 발견 신고",
+      "렌탈 제품 조기 해지 위약금 분쟁",
+      "멤버십 포인트 만료 전 사용 불가",
+      "항공권 변경 수수료 과다 청구",
+      "온라인 강의 환불 불가 정책 분쟁"
+    ]
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "privacy_policy": {
+    "version": "3.0",
+    "unit": "관계의 문서 내 의미·귀속으로 판정한다. 값 외형이나 엔티티 타입만으로 판정하지 않는다.",
+    "PII": "문서의 특정 개인에게 식별자·연락처·주소·소속·학력·금융정보·활동 사실을 귀속하거나, 개인을 식별·연결하는 관계. 가족·보호자 등 개인 사이의 사적 관계도 포함한다.",
+    "NON_PII": "기관 공용 정보의 의미 관계 또는 명시적 가상 사례/작품 인물의 설정 관계. 공개 위키·전기 소개로 분명히 구분된 인물의 출처로 확인한 공개 약력 관계도 이 데이터셋에서는 NON_PII로 분류한다. 공개 인물의 모든 정보가 NON_PII라는 뜻은 아니다.",
+    "AMBIGUOUS": "전체 본문을 읽어도 관계의 귀속·역할을 정할 근거가 부족하거나 해석이 충돌하는 경우. 여러 문장의 근거가 필요하다는 사실만으로 AMBIGUOUS가 되지 않는다.",
+    "name_policy": "actual_party: 문서의 신청인·환자·지원자·고객·담당 대표는 합성 이름이어도 PII 맥락. example_person: 본문에서 가상 예시 또는 작품 등장인물임이 명시된 설정 관계만 NON_PII. public_reference: 공개 위키·전기 소개로 서술하며 출처로 확인된 공개 약력만 NON_PII. 유명인이라는 추측이나 위키 존재만으로 판정하지 않는다. 같은 사람을 문서의 실제 계약/진료 당사자로 쓰거나 비공개 연락처·금융·신원 정보를 귀속하면 PII다. 참고 인물을 실제 당사자의 관계망과 혼동하지 않는다.",
+    "scope": "공개 약력의 NON_PII는 이 데이터셋의 명시적인 운영 정의이며 법적 비개인정보 판정이 아니다. 실제 값의 합성 여부와 문서 내 역할은 구분한다.",
+    "synthetic_values": "모든 값이 합성이라는 사실은 NON_PII의 근거가 아니다. 합성 문서 안에서 실제 당사자로 쓰이면 개인 귀속으로 판단한다.",
+    "examples": [
+      {
+        "text": "신청인이 자신의 연락처로 유선 번호를 기재했다.",
+        "label": "PII"
+      },
+      {
+        "text": "고객지원 부서가 휴대폰 형식의 번호와 개인 메일처럼 보이는 주소를 공동 문의 창구로 운영한다.",
+        "label": "NON_PII"
+      },
+      {
+        "text": "계좌를 개인의 생활비 계좌로 등록했다.",
+        "label": "PII"
+      },
+      {
+        "text": "기관의 공동 정산 계좌로 납부를 접수한다.",
+        "label": "NON_PII"
+      }
+    ],
+    "annotation": "독립 검수에서 확정된 관계만 채택한다. 한 노드가 PII 관계에 참여하면 그 노드의 모든 실제 mention을 마스킹하며 관계별 privacy_label은 별도로 보존한다. 이는 노드 마스킹 규칙이지 모든 관계를 PII로 바꾸는 규칙이 아니다."
+  },
+  "requirements": {
+    "total_relations": 3,
+    "pii_relations": 1,
+    "non_pii_relations": 2,
+    "non_pii_only_nodes_min": 2
+  },
+  "relation_slots": [
+    {
+      "relation_id": "R1",
+      "target_privacy": "PII"
+    },
+    {
+      "relation_id": "R2",
+      "target_privacy": "NON_PII"
+    },
+    {
+      "relation_id": "R3",
+      "target_privacy": "NON_PII"
+    }
+  ],
+  "seed_plan": {
+    "plan_version": 1,
+    "entities": [
+      {
+        "entity_id": "E1",
+        "entity_type": "NAME",
+        "context_role": "patient",
+        "slot_group": "P1"
+      },
+      {
+        "entity_id": "E2",
+        "entity_type": "DATE_OF_BIRTH",
+        "context_role": "personal_attribute",
+        "slot_group": "P1"
+      },
+      {
+        "entity_id": "E3",
+        "entity_type": "WORKPLACE",
+        "context_role": "public_office",
+        "slot_group": "office_2"
+      },
+      {
+        "entity_id": "E4",
+        "entity_type": "ADDRESS",
+        "context_role": "public_office_information",
+        "slot_group": "office_2"
+      },
+      {
+        "entity_id": "E5",
+        "entity_type": "WORKPLACE",
+        "context_role": "public_office",
+        "slot_group": "office_1"
+      },
+      {
+        "entity_id": "E6",
+        "entity_type": "ADDRESS",
+        "context_role": "public_office_information",
+        "slot_group": "office_1"
+      }
+    ],
+    "relations": [
+      {
+        "relation_id": "R1",
+        "target_privacy": "PII",
+        "source": "E1",
+        "target": "E2",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "",
+        "context_reason": ""
+      },
+      {
+        "relation_id": "R2",
+        "target_privacy": "NON_PII",
+        "source": "E3",
+        "target": "E4",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "",
+        "context_reason": ""
+      },
+      {
+        "relation_id": "R3",
+        "target_privacy": "NON_PII",
+        "source": "E5",
+        "target": "E6",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "",
+        "context_reason": ""
+      }
+    ],
+    "scenes": [
+      {
+        "scene_id": "SC1",
+        "section_id": "spec_1",
+        "order": 0,
+        "purpose": "현재 증상",
+        "relation_ids": [],
+        "outline": ""
+      },
+      {
+        "scene_id": "SC2",
+        "section_id": "spec_2",
+        "order": 1,
+        "purpose": "과거력",
+        "relation_ids": [],
+        "outline": ""
+      },
+      {
+        "scene_id": "SC3",
+        "section_id": "spec_3",
+        "order": 2,
+        "purpose": "약물과 알레르기",
+        "relation_ids": [],
+        "outline": ""
+      },
+      {
+        "scene_id": "SC4",
+        "section_id": "spec_4",
+        "order": 3,
+        "purpose": "생활습관",
+        "relation_ids": [],
+        "outline": ""
+      }
+    ],
+    "slot_constraints": [],
+    "persons": [
+      {
+        "person_id": "P1",
+        "name_entity_id": "E1",
+        "role": "patient",
+        "context_kind": "actual_party"
+      }
+    ],
+    "person_entity_links": [
+      {
+        "person_id": "P1",
+        "entity_id": "E1",
+        "role": "patient",
+        "link_kind": "identity",
+        "relation_ids": [
+          "R1"
+        ]
+      },
+      {
+        "person_id": "P1",
+        "entity_id": "E2",
+        "role": "INFORMATION_GOVERNANCE",
+        "link_kind": "personal_attribute",
+        "relation_ids": [
+          "R1"
+        ]
+      }
+    ]
+  },
+  "condition": {
+    "domain": "medical",
+    "subtype": "questionnaire",
+    "subtype_label": "문진표",
+    "contract_category": "",
+    "n_parties": 1,
+    "person_count_scope": "문서에 이름 엔티티로 등록되는 주요 실제 인물 수. 이름 없는 일반 담당자 역할은 제외한다.",
+    "person_slots": [
+      {
+        "person_id": "P1",
+        "name_entity_id": "E1",
+        "role": "patient",
+        "role_label": "환자"
+      }
+    ],
+    "max_example_persons": 0,
+    "required_relation_types": [],
+    "document_format": "form",
+    "layout_variant": "type_spec",
+    "layout_variant_label": "문진표 전용 항목·순서",
+    "fixed_format": true,
+    "narrative_viewpoint": "patient_response",
+    "topic": "문진표",
+    "length_target": 2045,
+    "min_chars": 1533,
+    "document_spec": {
+      "version": "type_specs_v1",
+      "domain": "medical",
+      "subtype": "questionnaire",
+      "label": "문진표",
+      "writer": "환자",
+      "reader": "문진을 확인하는 의료진",
+      "participant_roles": [
+        "환자:증상과 병력 응답의 주체"
+      ],
+      "voice": "patient_response",
+      "sections": [
+        {
+          "section_id": "spec_1",
+          "title": "현재 증상",
+          "mode": "qa",
+          "structure": "질문과 구체적인 응답을 짝지어 작성",
+          "fact_fields": [
+            {
+              "field_id": "F1",
+              "requirement": "시작 시점·빈도·강도에 대한 질문과 답"
+            },
+            {
+              "field_id": "F2",
+              "requirement": "악화·완화 조건과 기능 제한"
+            }
+          ]
+        },
+        {
+          "section_id": "spec_2",
+          "title": "과거력",
+          "mode": "qa",
+          "structure": "질문과 구체적인 응답을 짝지어 작성",
+          "fact_fields": [
+            {
+              "field_id": "F1",
+              "requirement": "기저질환·수술·치료 경험과 현재 상태"
+            },
+            {
+              "field_id": "F2",
+              "requirement": "해당 없음 또는 모르는 항목의 구분"
+            }
+          ]
+        },
+        {
+          "section_id": "spec_3",
+          "title": "약물과 알레르기",
+          "mode": "qa",
+          "structure": "질문과 구체적인 응답을 짝지어 작성",
+          "fact_fields": [
+            {
+              "field_id": "F1",
+              "requirement": "복용약 종류·주기·복용 목적"
+            },
+            {
+              "field_id": "F2",
+              "requirement": "알레르기 대상·반응·발생 경험"
+            }
+          ]
+        },
+        {
+          "section_id": "spec_4",
+          "title": "생활습관",
+          "mode": "qa",
+          "structure": "질문과 구체적인 응답을 짝지어 작성",
+          "fact_fields": [
+            {
+              "field_id": "F1",
+              "requirement": "수면·식사·활동의 구체 패턴"
+            },
+            {
+              "field_id": "F2",
+              "requirement": "최근 변화와 추가로 알릴 사항"
+            }
+          ]
+        }
+      ],
+      "conditional_rules": [
+        "복용약이 없으면 없음으로 기록하고 약명이 불확실하면 확인 필요로 남긴다. 증상 응답만으로 확정 진단이나 처방을 붙이지 않는다."
+      ],
+      "completion_criterion": "각 질문에 실질 응답이 있고 미확인·없음이 구별되며 증상·약물·알레르기 사이의 서술이 모순되지 않는다.",
+      "domain_guidance": "접수·문진·결과·청구·동의의 용도를 구분한다. 증상·응답·관찰·검사·행정 상태를 구체적으로 쓰되 해당 문서의 확인 범위를 넘어 진단·처방·치료 성공을 창작하지 않는다.",
+      "compatible_relation_types": [
+        "BUSINESS_SERVICE_RELATION",
+        "CONTACT_ASSOCIATION",
+        "GUIDANCE_SUPPORT",
+        "IDENTITY_ASSOCIATION",
+        "INFORMATION_GOVERNANCE",
+        "LOCATION_ASSOCIATION",
+        "ORGANIZATIONAL_RELATION",
+        "PERSONAL_RELATIONSHIP",
+        "PROCEDURAL_RELATION"
+      ],
+      "scenario": {
+        "id": "case_from_spec",
+        "label": "문진표",
+        "include": [
+          "계획 단계에서 조건별 적용 여부와 사건 상태를 확정"
+        ],
+        "exclude": []
+      },
+      "checks": [
+        {
+          "check_id": "author",
+          "section_id": "",
+          "requirement": "환자가 문진을 확인하는 의료진에게 쓰는 관점과 당사자 역할이 본문에서 명확하다."
+        },
+        {
+          "check_id": "scope",
+          "section_id": "",
+          "requirement": "선택된 상황·조건별 적용 범위가 일관되고 제외된 내용이 없다. 복용약이 없으면 없음으로 기록하고 약명이 불확실하면 확인 필요로 남긴다. 증상 응답만으로 확정 진단이나 처방을 붙이지 않는다."
+        },
+        {
+          "check_id": "spec_1",
+          "section_id": "spec_1",
+          "requirement": "질문과 구체적인 응답을 짝지어 작성; 시작 시점·빈도·강도에 대한 질문과 답; 악화·완화 조건과 기능 제한"
+        },
+        {
+          "check_id": "spec_2",
+          "section_id": "spec_2",
+          "requirement": "질문과 구체적인 응답을 짝지어 작성; 기저질환·수술·치료 경험과 현재 상태; 해당 없음 또는 모르는 항목의 구분"
+        },
+        {
+          "check_id": "spec_3",
+          "section_id": "spec_3",
+          "requirement": "질문과 구체적인 응답을 짝지어 작성; 복용약 종류·주기·복용 목적; 알레르기 대상·반응·발생 경험"
+        },
+        {
+          "check_id": "spec_4",
+          "section_id": "spec_4",
+          "requirement": "질문과 구체적인 응답을 짝지어 작성; 수면·식사·활동의 구체 패턴; 최근 변화와 추가로 알릴 사항"
+        },
+        {
+          "check_id": "complete",
+          "section_id": "",
+          "requirement": "각 질문에 실질 응답이 있고 미확인·없음이 구별되며 증상·약물·알레르기 사이의 서술이 모순되지 않는다."
+        }
+      ],
+      "role_bindings": [
+        {
+          "name_entity_id": "E1",
+          "role_code": "patient",
+          "document_role": "환자:증상과 병력 응답의 주체"
+        }
+      ]
+    },
+    "allowed_personal_types": [
+      "NAME",
+      "AGE",
+      "DATE_OF_BIRTH",
+      "MOBILE_PHONE"
+    ],
+    "allowed_public_types": [
+      "WORKPLACE",
+      "DEPARTMENT",
+      "POSITION",
+      "SCHOOL",
+      "MAJOR",
+      "ADDRESS",
+      "TELEPHONE",
+      "MOBILE_PHONE",
+      "EMAIL",
+      "BANK_ACCOUNT_NUMBER"
+    ],
+    "content_depth": {
+      "facts_to_develop": [
+        "시작 시점·빈도·강도에 대한 질문과 답",
+        "악화·완화 조건과 기능 제한",
+        "기저질환·수술·치료 경험과 현재 상태",
+        "해당 없음 또는 모르는 항목의 구분",
+        "복용약 종류·주기·복용 목적",
+        "알레르기 대상·반응·발생 경험",
+        "수면·식사·활동의 구체 패턴",
+        "최근 변화와 추가로 알릴 사항"
+      ],
+      "rule": "확정된 사건·상황과 해당 section의 필수 사실 안에서만 내용을 전개한다. 작성 안내·반복·새 엔티티로 분량을 채우지 않는다.",
+      "conditional_rules": [
+        "복용약이 없으면 없음으로 기록하고 약명이 불확실하면 확인 필요로 남긴다. 증상 응답만으로 확정 진단이나 처방을 붙이지 않는다."
+      ],
+      "scenario": {
+        "id": "case_from_spec",
+        "label": "문진표",
+        "include": [
+          "계획 단계에서 조건별 적용 여부와 사건 상태를 확정"
+        ],
+        "exclude": []
+      }
+    },
+    "section_plan": [
+      {
+        "section_id": "spec_1",
+        "title": "현재 증상",
+        "allowed_kinds": [
+          "heading",
+          "question",
+          "answer",
+          "prose"
+        ],
+        "target_chars": 511,
+        "required": true,
+        "mode": "qa",
+        "structure": "질문과 구체적인 응답을 짝지어 작성",
+        "fact_fields": [
+          {
+            "field_id": "F1",
+            "requirement": "시작 시점·빈도·강도에 대한 질문과 답"
+          },
+          {
+            "field_id": "F2",
+            "requirement": "악화·완화 조건과 기능 제한"
+          }
+        ]
+      },
+      {
+        "section_id": "spec_2",
+        "title": "과거력",
+        "allowed_kinds": [
+          "heading",
+          "question",
+          "answer",
+          "prose"
+        ],
+        "target_chars": 511,
+        "required": true,
+        "mode": "qa",
+        "structure": "질문과 구체적인 응답을 짝지어 작성",
+        "fact_fields": [
+          {
+            "field_id": "F1",
+            "requirement": "기저질환·수술·치료 경험과 현재 상태"
+          },
+          {
+            "field_id": "F2",
+            "requirement": "해당 없음 또는 모르는 항목의 구분"
+          }
+        ]
+      },
+      {
+        "section_id": "spec_3",
+        "title": "약물과 알레르기",
+        "allowed_kinds": [
+          "heading",
+          "question",
+          "answer",
+          "prose"
+        ],
+        "target_chars": 511,
+        "required": true,
+        "mode": "qa",
+        "structure": "질문과 구체적인 응답을 짝지어 작성",
+        "fact_fields": [
+          {
+            "field_id": "F1",
+            "requirement": "복용약 종류·주기·복용 목적"
+          },
+          {
+            "field_id": "F2",
+            "requirement": "알레르기 대상·반응·발생 경험"
+          }
+        ]
+      },
+      {
+        "section_id": "spec_4",
+        "title": "생활습관",
+        "allowed_kinds": [
+          "heading",
+          "question",
+          "answer",
+          "prose"
+        ],
+        "target_chars": 512,
+        "required": true,
+        "mode": "qa",
+        "structure": "질문과 구체적인 응답을 짝지어 작성",
+        "fact_fields": [
+          {
+            "field_id": "F1",
+            "requirement": "수면·식사·활동의 구체 패턴"
+          },
+          {
+            "field_id": "F2",
+            "requirement": "최근 변화와 추가로 알릴 사항"
+          }
+        ]
+      }
+    ]
+  },
+  "ontology": [
+    {
+      "relation": "INFORMATION_GOVERNANCE",
+      "meaning": "정보·문서·증거의 접근, 처리, 공개, 저장, 제출, 검토 또는 검증 관계이다."
+    }
+  ],
+  "feedback": []
+}

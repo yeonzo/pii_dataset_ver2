@@ -1,0 +1,59 @@
+{
+  "base_draft_version": 1,
+  "insertions": [],
+  "replacements": {},
+  "refs": [
+    {
+      "ref_id": "C1",
+      "entity_id": "E1",
+      "surface": "환자",
+      "kind": "role"
+    },
+    {
+      "ref_id": "C2",
+      "entity_id": "E2",
+      "surface": "환자의 생년월일",
+      "kind": "demonstrative"
+    },
+    {
+      "ref_id": "C3",
+      "entity_id": "E3",
+      "surface": "공공기관",
+      "kind": "role"
+    },
+    {
+      "ref_id": "C4",
+      "entity_id": "E4",
+      "surface": "주소 정보",
+      "kind": "demonstrative"
+    },
+    {
+      "ref_id": "C5",
+      "entity_id": "E5",
+      "surface": "기관",
+      "kind": "role"
+    },
+    {
+      "ref_id": "C6",
+      "entity_id": "E6",
+      "surface": "기관 주소",
+      "kind": "demonstrative"
+    }
+  ],
+  "relation_evidence_updates": {},
+  "relation_repairs": {
+    "R1": {
+      "form": "sentence",
+      "text": "환자 <NAME:E1>는 자신의 생년월일 <DATE_OF_BIRTH:E2>을 의료 서비스 제공을 위해 제공하며, 이는 환자의 신원 확인과 치료 기록 관리에 사용된다."
+    },
+    "R2": {
+      "form": "sentence",
+      "text": "공공기관 <WORKPLACE:E3>는 주소 정보 <ADDRESS:E4>를 이용하여 지역 사회의 건강 서비스 제공 및 정책 수립에 활용한다."
+    },
+    "R3": {
+      "form": "sentence",
+      "text": "공공기관 <WORKPLACE:E5>의 주소 <ADDRESS:E6>는 해당 기관의 위치를 명확히 하여 시민들이 접근할 수 있도록 안내하기 위한 것이다."
+    }
+  },
+  "continuations": {}
+}

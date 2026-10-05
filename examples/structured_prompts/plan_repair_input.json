@@ -1,0 +1,402 @@
+{
+  "privacy_policy": {
+    "version": "2.0",
+    "unit": "관계의 문서 내 의미·귀속으로 판정한다. 값 외형이나 엔티티 타입만으로 판정하지 않는다.",
+    "PII": "문서의 특정 개인에게 식별자·연락처·주소·소속·학력·금융정보·활동 사실을 귀속하거나, 개인을 식별·연결하는 관계. 가족·보호자 등 개인 사이의 사적 관계도 포함한다.",
+    "NON_PII": "실제 의미 관계이며 개인 귀속이 없는 관계. 기관이 공식적으로 공동 운영하는 문의 채널·조직 구성·정산 계좌·공동 관리 자산·기관 간 업무 관계 등이 해당한다.",
+    "AMBIGUOUS": "전체 본문을 읽어도 관계의 귀속·역할을 정할 근거가 부족하거나 해석이 충돌하는 경우. 여러 문장의 근거가 필요하다는 사실만으로 AMBIGUOUS가 되지 않는다.",
+    "name_policy": "실제 당사자·환자·지원자·고객·보호자·담당 대표의 이름은 개인 맥락이다. 명시된 예시 장면의 예시 인물만 별도 예시 인물로 구분할 수 있다. 예시 이름에 인구통계/식별자 속성을 임의 확장하지 않는다. 유명인 여부를 추측하지 않는다.",
+    "synthetic_values": "모든 값이 합성이라는 사실은 NON_PII의 근거가 아니다. 합성 문서 안에서 실제 당사자로 쓰이면 개인 귀속으로 판단한다.",
+    "examples": [
+      {
+        "text": "신청인이 자신의 연락처로 유선 번호를 기재했다.",
+        "label": "PII"
+      },
+      {
+        "text": "고객지원 부서가 휴대폰 형식의 번호와 개인 메일처럼 보이는 주소를 공동 문의 창구로 운영한다.",
+        "label": "NON_PII"
+      },
+      {
+        "text": "계좌를 개인의 생활비 계좌로 등록했다.",
+        "label": "PII"
+      },
+      {
+        "text": "기관의 공동 정산 계좌로 납부를 접수한다.",
+        "label": "NON_PII"
+      }
+    ],
+    "annotation": "독립 검수에서 확정된 관계만 채택한다. 한 노드가 PII 관계에 참여하면 그 노드의 모든 실제 mention을 마스킹하며 관계별 privacy_label은 별도로 보존한다. 이는 노드 마스킹 규칙이지 모든 관계를 PII로 바꾸는 규칙이 아니다."
+  },
+  "domain": "financial",
+  "existing_plan": {
+    "plan_version": 1,
+    "entities": [
+      {
+        "entity_id": "E1",
+        "entity_type": "NAME",
+        "context_role": "sender",
+        "slot_group": "P1"
+      },
+      {
+        "entity_id": "E2",
+        "entity_type": "NAME",
+        "context_role": "recipient",
+        "slot_group": "P2"
+      },
+      {
+        "entity_id": "E3",
+        "entity_type": "BANK_ACCOUNT_NUMBER",
+        "context_role": "personal_attribute",
+        "slot_group": "P1"
+      },
+      {
+        "entity_id": "E4",
+        "entity_type": "SCHOOL",
+        "context_role": "public_office",
+        "slot_group": "office_2"
+      },
+      {
+        "entity_id": "E5",
+        "entity_type": "SCHOOL",
+        "context_role": "public_office_information",
+        "slot_group": "office_target_2"
+      },
+      {
+        "entity_id": "E6",
+        "entity_type": "SCHOOL",
+        "context_role": "public_office",
+        "slot_group": "office_1"
+      },
+      {
+        "entity_id": "E7",
+        "entity_type": "BANK_ACCOUNT_NUMBER",
+        "context_role": "public_office_information",
+        "slot_group": "office_1"
+      },
+      {
+        "entity_id": "E8",
+        "entity_type": "BANK_ACCOUNT_NUMBER",
+        "context_role": "personal_attribute",
+        "slot_group": "P2"
+      },
+      {
+        "entity_id": "E9",
+        "entity_type": "RRN",
+        "context_role": "personal_attribute",
+        "slot_group": "P1"
+      },
+      {
+        "entity_id": "E10",
+        "entity_type": "WORKPLACE",
+        "context_role": "public_office",
+        "slot_group": "office_2"
+      },
+      {
+        "entity_id": "E11",
+        "entity_type": "DEPARTMENT",
+        "context_role": "public_office_information",
+        "slot_group": "office_2"
+      },
+      {
+        "entity_id": "E12",
+        "entity_type": "RRN",
+        "context_role": "personal_attribute",
+        "slot_group": "P2"
+      },
+      {
+        "entity_id": "E13",
+        "entity_type": "POSITION",
+        "context_role": "public_office_information",
+        "slot_group": "office_2"
+      },
+      {
+        "entity_id": "E14",
+        "entity_type": "EMAIL",
+        "context_role": "public_office_information",
+        "slot_group": "office_2"
+      }
+    ],
+    "relations": [
+      {
+        "relation_id": "R1",
+        "target_privacy": "PII",
+        "source": "E1",
+        "target": "E3",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "SC1",
+        "context_reason": "송금인: 개인 정보의 제출/처리/확인 주체와 대상을 명시한다"
+      },
+      {
+        "relation_id": "R2",
+        "target_privacy": "NON_PII",
+        "source": "E4",
+        "target": "E5",
+        "relation": "BUSINESS_SERVICE_RELATION",
+        "scene_id": "SC2",
+        "context_reason": "기관/부서: 기관이 제공·수령하는 공식 서비스와 계약 상대를 명시한다"
+      },
+      {
+        "relation_id": "R3",
+        "target_privacy": "NON_PII",
+        "source": "E6",
+        "target": "E7",
+        "relation": "CASE_AND_INCIDENT_RELATION",
+        "scene_id": "SC3",
+        "context_reason": "기관/부서: 기관/부서의 사고·분쟁 처리 역할과 관련 기관 또는 계좌를 명시한다"
+      },
+      {
+        "relation_id": "R4",
+        "target_privacy": "PII",
+        "source": "E2",
+        "target": "E8",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "SC4",
+        "context_reason": "수취인: 개인 정보의 제출/처리/확인 주체와 대상을 명시한다"
+      },
+      {
+        "relation_id": "R5",
+        "target_privacy": "PII",
+        "source": "E1",
+        "target": "E9",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "SC1",
+        "context_reason": "송금인: 개인 정보의 제출/처리/확인 주체와 대상을 명시한다"
+      },
+      {
+        "relation_id": "R6",
+        "target_privacy": "NON_PII",
+        "source": "E10",
+        "target": "E11",
+        "relation": "COLLABORATION_PARTNERSHIP",
+        "scene_id": "SC2",
+        "context_reason": "기관/부서: 기관/부서가 공동 수행하는 업무의 목적과 제휴 상대를 명시한다"
+      },
+      {
+        "relation_id": "R7",
+        "target_privacy": "PII",
+        "source": "E1",
+        "target": "E2",
+        "relation": "COLLABORATION_PARTNERSHIP",
+        "scene_id": "SC3",
+        "context_reason": "송금인: 개인 사이의 공동 업무/사업 목적과 협력 상대를 명시한다"
+      },
+      {
+        "relation_id": "R8",
+        "target_privacy": "PII",
+        "source": "E2",
+        "target": "E12",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "SC4",
+        "context_reason": "수취인: 개인 정보의 제출/처리/확인 주체와 대상을 명시한다"
+      },
+      {
+        "relation_id": "R9",
+        "target_privacy": "PII",
+        "source": "E1",
+        "target": "E3",
+        "relation": "CASE_AND_INCIDENT_RELATION",
+        "scene_id": "SC1",
+        "context_reason": "송금인: 계좌 피해·사고·분쟁에서 개인의 피해자/신청 당사자 역할과 관련 대상을 명시한다"
+      },
+      {
+        "relation_id": "R10",
+        "target_privacy": "NON_PII",
+        "source": "E4",
+        "target": "E13",
+        "relation": "PROCEDURAL_RELATION",
+        "scene_id": "SC2",
+        "context_reason": "기관/부서: 기관의 신청·승인 처리 주체와 필수 요건/대상을 명시한다"
+      },
+      {
+        "relation_id": "R11",
+        "target_privacy": "PII",
+        "source": "E1",
+        "target": "E2",
+        "relation": "INSURANCE_RELATION",
+        "scene_id": "SC3",
+        "context_reason": "송금인: 계약자/피보험자/수익자 등 보험 당사자의 역할을 명시한다"
+      },
+      {
+        "relation_id": "R12",
+        "target_privacy": "NON_PII",
+        "source": "E10",
+        "target": "E14",
+        "relation": "INFORMATION_GOVERNANCE",
+        "scene_id": "SC4",
+        "context_reason": "기관/부서: 공식 자료의 제출/검토/접근 주체와 대상을 명시한다"
+      }
+    ],
+    "scenes": [
+      {
+        "scene_id": "SC1",
+        "section_id": "overview",
+        "order": 0,
+        "purpose": "작성 목적",
+        "relation_ids": [
+          "R1",
+          "R5",
+          "R9"
+        ],
+        "outline": "인물의 역할·정보 귀속과 기관의 공식 업무를 구분해 주제에 맞게 서술한다"
+      },
+      {
+        "scene_id": "SC2",
+        "section_id": "details",
+        "order": 1,
+        "purpose": "기재 사항",
+        "relation_ids": [
+          "R2",
+          "R6",
+          "R10"
+        ],
+        "outline": "인물의 역할·정보 귀속과 기관의 공식 업무를 구분해 주제에 맞게 서술한다"
+      },
+      {
+        "scene_id": "SC3",
+        "section_id": "procedure",
+        "order": 2,
+        "purpose": "확인과 처리 절차",
+        "relation_ids": [
+          "R3",
+          "R7",
+          "R11"
+        ],
+        "outline": "인물의 역할·정보 귀속과 기관의 공식 업무를 구분해 주제에 맞게 서술한다"
+      },
+      {
+        "scene_id": "SC4",
+        "section_id": "notice",
+        "order": 3,
+        "purpose": "안내 및 확인",
+        "relation_ids": [
+          "R4",
+          "R8",
+          "R12"
+        ],
+        "outline": "인물의 역할·정보 귀속과 기관의 공식 업무를 구분해 주제에 맞게 서술한다"
+      }
+    ],
+    "slot_constraints": [],
+    "persons": [
+      {
+        "person_id": "P1",
+        "name_entity_id": "E1",
+        "role": "sender",
+        "context_kind": "actual_party"
+      },
+      {
+        "person_id": "P2",
+        "name_entity_id": "E2",
+        "role": "recipient",
+        "context_kind": "actual_party"
+      }
+    ],
+    "person_entity_links": [
+      {
+        "person_id": "P1",
+        "entity_id": "E1",
+        "role": "sender",
+        "link_kind": "identity",
+        "relation_ids": [
+          "R1",
+          "R5",
+          "R7",
+          "R9",
+          "R11"
+        ]
+      },
+      {
+        "person_id": "P1",
+        "entity_id": "E3",
+        "role": "INFORMATION_GOVERNANCE",
+        "link_kind": "personal_attribute",
+        "relation_ids": [
+          "R1",
+          "R9"
+        ]
+      },
+      {
+        "person_id": "P1",
+        "entity_id": "E9",
+        "role": "INFORMATION_GOVERNANCE",
+        "link_kind": "personal_attribute",
+        "relation_ids": [
+          "R5"
+        ]
+      },
+      {
+        "person_id": "P1",
+        "entity_id": "E2",
+        "role": "COLLABORATION_PARTNERSHIP",
+        "link_kind": "related_context",
+        "relation_ids": [
+          "R7",
+          "R11"
+        ]
+      },
+      {
+        "person_id": "P2",
+        "entity_id": "E2",
+        "role": "recipient",
+        "link_kind": "identity",
+        "relation_ids": [
+          "R4",
+          "R7",
+          "R8",
+          "R11"
+        ]
+      },
+      {
+        "person_id": "P2",
+        "entity_id": "E8",
+        "role": "INFORMATION_GOVERNANCE",
+        "link_kind": "personal_attribute",
+        "relation_ids": [
+          "R4"
+        ]
+      },
+      {
+        "person_id": "P2",
+        "entity_id": "E1",
+        "role": "COLLABORATION_PARTNERSHIP",
+        "link_kind": "related_context",
+        "relation_ids": [
+          "R7",
+          "R11"
+        ]
+      },
+      {
+        "person_id": "P2",
+        "entity_id": "E12",
+        "role": "INFORMATION_GOVERNANCE",
+        "link_kind": "personal_attribute",
+        "relation_ids": [
+          "R8"
+        ]
+      }
+    ]
+  },
+  "feedback": [
+    {
+      "code": "VALUE_GROUP_TYPE_CONFLICT",
+      "action": "REPLAN",
+      "message": "서로 다른 같은 타입 노드를 같은 persona로 묶은 제약 오류의 출력 계약 예시"
+    }
+  ],
+  "baseline_slot_groups": {
+    "E1": "E1",
+    "E2": "E2",
+    "E3": "E3",
+    "E4": "E4",
+    "E5": "E5",
+    "E6": "E6",
+    "E7": "E7",
+    "E8": "E8",
+    "E9": "E9",
+    "E10": "E10",
+    "E11": "E11",
+    "E12": "E12",
+    "E13": "E13",
+    "E14": "E14"
+  }
+}

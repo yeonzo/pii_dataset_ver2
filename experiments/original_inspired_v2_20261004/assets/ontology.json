@@ -1,0 +1,306 @@
+{
+  "career_education": [
+    {
+      "relation": "BUSINESS_SERVICE_RELATION",
+      "meaning": "계약 당사자, 상거래 또는 서비스 제공·수령에 관한 관계이다."
+    },
+    {
+      "relation": "COLLABORATION_PARTNERSHIP",
+      "meaning": "공동사업, 연구, 업무협력 또는 제휴 관계이다."
+    },
+    {
+      "relation": "CONTACT_ASSOCIATION",
+      "meaning": "개인·조직과 연락수단의 연결 또는 당사자 간 실제 연락 관계이다."
+    },
+    {
+      "relation": "CREDIT_AND_GUARANTEE_RELATION",
+      "meaning": "대여·대출 및 그 신청이나 채무를 보증하는 신용 관계이다."
+    },
+    {
+      "relation": "EDUCATION_STATUS",
+      "meaning": "교육기관·전공·훈련·인턴십과 관련된 소속, 학습, 참여 또는 완료 상태이다."
+    },
+    {
+      "relation": "EVENT_PARTICIPATION",
+      "meaning": "행사·세미나·대회·프로젝트에 대한 초청, 참석, 발표 또는 참여 관계이다."
+    },
+    {
+      "relation": "FINANCIAL_ASSET_ASSOCIATION",
+      "meaning": "개인·조직·금융상품과 계좌 또는 카드 사이의 보유·사용·지정·피해 등 연결이다."
+    },
+    {
+      "relation": "GUIDANCE_SUPPORT",
+      "meaning": "지도, 멘토링, 추천 또는 개인·조직 지원 관계이다."
+    },
+    {
+      "relation": "IDENTITY_ASSOCIATION",
+      "meaning": "개인·조직·자산과 인구통계 속성, 식별자 또는 인증수단 사이의 연결이다."
+    },
+    {
+      "relation": "INFORMATION_GOVERNANCE",
+      "meaning": "정보·문서·증거의 접근, 처리, 공개, 저장, 제출, 검토 또는 검증 관계이다."
+    },
+    {
+      "relation": "LOCATION_ASSOCIATION",
+      "meaning": "개인·조직·서비스·활동과 주소 또는 장소 사이의 위치 관계이다."
+    },
+    {
+      "relation": "ORGANIZATIONAL_RELATION",
+      "meaning": "개인·부서·조직 사이의 소속, 업무, 직위, 권한 또는 대표 관계이다."
+    },
+    {
+      "relation": "PERSONAL_RELATIONSHIP",
+      "meaning": "가족, 보호자, 돌봄 제공자 등 개인 사이의 사적·의존 관계이다."
+    },
+    {
+      "relation": "PROCEDURAL_RELATION",
+      "meaning": "신청, 계획, 승인 요건, 의무 또는 절차상 상태에 관한 관계이다."
+    },
+    {
+      "relation": "QUALIFICATION_AND_ASSESSMENT",
+      "meaning": "개인의 성취, 역량, 전문 분야, 평가, 인정 또는 인사처리 관계이다."
+    }
+  ],
+  "contract": [
+    {
+      "relation": "ASSET_RELATION",
+      "meaning": "유형·무형 자산의 소유, 사용, 임대, 상태 또는 권리 이전 관계이다."
+    },
+    {
+      "relation": "BUSINESS_SERVICE_RELATION",
+      "meaning": "계약 당사자, 상거래 또는 서비스 제공·수령에 관한 관계이다."
+    },
+    {
+      "relation": "CASE_AND_INCIDENT_RELATION",
+      "meaning": "법적 사건, 분쟁, 위반 또는 사고에서 당사자가 갖는 역할이다."
+    },
+    {
+      "relation": "COLLABORATION_PARTNERSHIP",
+      "meaning": "공동사업, 연구, 업무협력 또는 제휴 관계이다."
+    },
+    {
+      "relation": "CONTACT_ASSOCIATION",
+      "meaning": "개인·조직과 연락수단의 연결 또는 당사자 간 실제 연락 관계이다."
+    },
+    {
+      "relation": "CREDIT_AND_GUARANTEE_RELATION",
+      "meaning": "대여·대출 및 그 신청이나 채무를 보증하는 신용 관계이다."
+    },
+    {
+      "relation": "FINANCIAL_ASSET_ASSOCIATION",
+      "meaning": "개인·조직·금융상품과 계좌 또는 카드 사이의 보유·사용·지정·피해 등 연결이다."
+    },
+    {
+      "relation": "FINANCIAL_TRANSACTION",
+      "meaning": "금전·포인트의 지급, 송금, 환불, 적립, 예치 또는 상환 관계이다."
+    },
+    {
+      "relation": "IDENTITY_ASSOCIATION",
+      "meaning": "개인·조직·자산과 인구통계 속성, 식별자 또는 인증수단 사이의 연결이다."
+    },
+    {
+      "relation": "INFORMATION_GOVERNANCE",
+      "meaning": "정보·문서·증거의 접근, 처리, 공개, 저장, 제출, 검토 또는 검증 관계이다."
+    },
+    {
+      "relation": "INSURANCE_RELATION",
+      "meaning": "보험계약의 계약자·피보험자·수익자 또는 보장 관계이다."
+    },
+    {
+      "relation": "LOCATION_ASSOCIATION",
+      "meaning": "개인·조직·서비스·활동과 주소 또는 장소 사이의 위치 관계이다."
+    },
+    {
+      "relation": "ORGANIZATIONAL_RELATION",
+      "meaning": "개인·부서·조직 사이의 소속, 업무, 직위, 권한 또는 대표 관계이다."
+    },
+    {
+      "relation": "PROCEDURAL_RELATION",
+      "meaning": "신청, 계획, 승인 요건, 의무 또는 절차상 상태에 관한 관계이다."
+    }
+  ],
+  "financial": [
+    {
+      "relation": "BUSINESS_SERVICE_RELATION",
+      "meaning": "계약 당사자, 상거래 또는 서비스 제공·수령에 관한 관계이다."
+    },
+    {
+      "relation": "CASE_AND_INCIDENT_RELATION",
+      "meaning": "법적 사건, 분쟁, 위반 또는 사고에서 당사자가 갖는 역할이다."
+    },
+    {
+      "relation": "COLLABORATION_PARTNERSHIP",
+      "meaning": "공동사업, 연구, 업무협력 또는 제휴 관계이다."
+    },
+    {
+      "relation": "CONTACT_ASSOCIATION",
+      "meaning": "개인·조직과 연락수단의 연결 또는 당사자 간 실제 연락 관계이다."
+    },
+    {
+      "relation": "CREDIT_AND_GUARANTEE_RELATION",
+      "meaning": "대여·대출 및 그 신청이나 채무를 보증하는 신용 관계이다."
+    },
+    {
+      "relation": "FINANCIAL_ASSET_ASSOCIATION",
+      "meaning": "개인·조직·금융상품과 계좌 또는 카드 사이의 보유·사용·지정·피해 등 연결이다."
+    },
+    {
+      "relation": "FINANCIAL_TRANSACTION",
+      "meaning": "금전·포인트의 지급, 송금, 환불, 적립, 예치 또는 상환 관계이다."
+    },
+    {
+      "relation": "GUIDANCE_SUPPORT",
+      "meaning": "지도, 멘토링, 추천 또는 개인·조직 지원 관계이다."
+    },
+    {
+      "relation": "IDENTITY_ASSOCIATION",
+      "meaning": "개인·조직·자산과 인구통계 속성, 식별자 또는 인증수단 사이의 연결이다."
+    },
+    {
+      "relation": "INFORMATION_GOVERNANCE",
+      "meaning": "정보·문서·증거의 접근, 처리, 공개, 저장, 제출, 검토 또는 검증 관계이다."
+    },
+    {
+      "relation": "INSURANCE_RELATION",
+      "meaning": "보험계약의 계약자·피보험자·수익자 또는 보장 관계이다."
+    },
+    {
+      "relation": "LOCATION_ASSOCIATION",
+      "meaning": "개인·조직·서비스·활동과 주소 또는 장소 사이의 위치 관계이다."
+    },
+    {
+      "relation": "ORGANIZATIONAL_RELATION",
+      "meaning": "개인·부서·조직 사이의 소속, 업무, 직위, 권한 또는 대표 관계이다."
+    },
+    {
+      "relation": "PERSONAL_RELATIONSHIP",
+      "meaning": "가족, 보호자, 돌봄 제공자 등 개인 사이의 사적·의존 관계이다."
+    },
+    {
+      "relation": "PROCEDURAL_RELATION",
+      "meaning": "신청, 계획, 승인 요건, 의무 또는 절차상 상태에 관한 관계이다."
+    },
+    {
+      "relation": "QUALIFICATION_AND_ASSESSMENT",
+      "meaning": "개인의 성취, 역량, 전문 분야, 평가, 인정 또는 인사처리 관계이다."
+    }
+  ],
+  "legal": [
+    {
+      "relation": "ASSET_RELATION",
+      "meaning": "유형·무형 자산의 소유, 사용, 임대, 상태 또는 권리 이전 관계이다."
+    },
+    {
+      "relation": "BUSINESS_SERVICE_RELATION",
+      "meaning": "계약 당사자, 상거래 또는 서비스 제공·수령에 관한 관계이다."
+    },
+    {
+      "relation": "CASE_AND_INCIDENT_RELATION",
+      "meaning": "법적 사건, 분쟁, 위반 또는 사고에서 당사자가 갖는 역할이다."
+    },
+    {
+      "relation": "CONTACT_ASSOCIATION",
+      "meaning": "개인·조직과 연락수단의 연결 또는 당사자 간 실제 연락 관계이다."
+    },
+    {
+      "relation": "CREDIT_AND_GUARANTEE_RELATION",
+      "meaning": "대여·대출 및 그 신청이나 채무를 보증하는 신용 관계이다."
+    },
+    {
+      "relation": "FINANCIAL_ASSET_ASSOCIATION",
+      "meaning": "개인·조직·금융상품과 계좌 또는 카드 사이의 보유·사용·지정·피해 등 연결이다."
+    },
+    {
+      "relation": "FINANCIAL_TRANSACTION",
+      "meaning": "금전·포인트의 지급, 송금, 환불, 적립, 예치 또는 상환 관계이다."
+    },
+    {
+      "relation": "IDENTITY_ASSOCIATION",
+      "meaning": "개인·조직·자산과 인구통계 속성, 식별자 또는 인증수단 사이의 연결이다."
+    },
+    {
+      "relation": "INFORMATION_GOVERNANCE",
+      "meaning": "정보·문서·증거의 접근, 처리, 공개, 저장, 제출, 검토 또는 검증 관계이다."
+    },
+    {
+      "relation": "LOCATION_ASSOCIATION",
+      "meaning": "개인·조직·서비스·활동과 주소 또는 장소 사이의 위치 관계이다."
+    },
+    {
+      "relation": "ORGANIZATIONAL_RELATION",
+      "meaning": "개인·부서·조직 사이의 소속, 업무, 직위, 권한 또는 대표 관계이다."
+    },
+    {
+      "relation": "PROCEDURAL_RELATION",
+      "meaning": "신청, 계획, 승인 요건, 의무 또는 절차상 상태에 관한 관계이다."
+    }
+  ],
+  "medical": [
+    {
+      "relation": "BUSINESS_SERVICE_RELATION",
+      "meaning": "계약 당사자, 상거래 또는 서비스 제공·수령에 관한 관계이다."
+    },
+    {
+      "relation": "CASE_AND_INCIDENT_RELATION",
+      "meaning": "법적 사건, 분쟁, 위반 또는 사고에서 당사자가 갖는 역할이다."
+    },
+    {
+      "relation": "CONTACT_ASSOCIATION",
+      "meaning": "개인·조직과 연락수단의 연결 또는 당사자 간 실제 연락 관계이다."
+    },
+    {
+      "relation": "FINANCIAL_ASSET_ASSOCIATION",
+      "meaning": "개인·조직·금융상품과 계좌 또는 카드 사이의 보유·사용·지정·피해 등 연결이다."
+    },
+    {
+      "relation": "FINANCIAL_TRANSACTION",
+      "meaning": "금전·포인트의 지급, 송금, 환불, 적립, 예치 또는 상환 관계이다."
+    },
+    {
+      "relation": "IDENTITY_ASSOCIATION",
+      "meaning": "개인·조직·자산과 인구통계 속성, 식별자 또는 인증수단 사이의 연결이다."
+    },
+    {
+      "relation": "INFORMATION_GOVERNANCE",
+      "meaning": "정보·문서·증거의 접근, 처리, 공개, 저장, 제출, 검토 또는 검증 관계이다."
+    },
+    {
+      "relation": "LOCATION_ASSOCIATION",
+      "meaning": "개인·조직·서비스·활동과 주소 또는 장소 사이의 위치 관계이다."
+    },
+    {
+      "relation": "ORGANIZATIONAL_RELATION",
+      "meaning": "개인·부서·조직 사이의 소속, 업무, 직위, 권한 또는 대표 관계이다."
+    },
+    {
+      "relation": "PERSONAL_RELATIONSHIP",
+      "meaning": "가족, 보호자, 돌봄 제공자 등 개인 사이의 사적·의존 관계이다."
+    },
+    {
+      "relation": "PROCEDURAL_RELATION",
+      "meaning": "신청, 계획, 승인 요건, 의무 또는 절차상 상태에 관한 관계이다."
+    }
+  ],
+  "support": [
+    {
+      "relation": "CONTACT_ASSOCIATION",
+      "meaning": "개인·조직과 연락수단의 연결 또는 당사자 간 실제 연락 관계이다."
+    },
+    {
+      "relation": "FINANCIAL_ASSET_ASSOCIATION",
+      "meaning": "개인·조직·금융상품과 계좌 또는 카드 사이의 보유·사용·지정·피해 등 연결이다."
+    },
+    {
+      "relation": "FINANCIAL_TRANSACTION",
+      "meaning": "금전·포인트의 지급, 송금, 환불, 적립, 예치 또는 상환 관계이다."
+    },
+    {
+      "relation": "IDENTITY_ASSOCIATION",
+      "meaning": "개인·조직·자산과 인구통계 속성, 식별자 또는 인증수단 사이의 연결이다."
+    },
+    {
+      "relation": "LOCATION_ASSOCIATION",
+      "meaning": "개인·조직·서비스·활동과 주소 또는 장소 사이의 위치 관계이다."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-05",
+  "source_run": "one_medical_questionnaire_20261005_v1",
+  "candidate_id": "medical_001_c001",
+  "document": "medical / questionnaire (문진표), accepted",
+  "requests": {
+    "plan": "runs/one_medical_questionnaire_20261005_v1/candidates/medical_001_c001/api/request_00001.json",
+    "draft": "runs/one_medical_questionnaire_20261005_v1/candidates/medical_001_c001/api/request_00002.json",
+    "repair": "runs/one_medical_questionnaire_20261005_v1/candidates/medical_001_c001/api/request_00003.json",
+    "expand": "runs/one_medical_questionnaire_20261005_v1/candidates/medical_001_c001/api/request_00004.json",
+    "review": "runs/one_medical_questionnaire_20261005_v1/candidates/medical_001_c001/api/request_00007.json"
+  },
+  "run_settings_differing_from_config_json": {
+    "relation_count_range": [
+      3,
+      3
+    ],
+    "relation_coverage.enabled": false
+  },
+  "code_state": "Generation prompts are unchanged since this run. review_prompt.txt holds the current reviewer prompt, which gained an exception in relation rules 4 and 5 after the run; the other review_* files are from the run. The run used privacy policy 3.0; the current definition is 3.1.",
+  "note": "Files are the exact request body parts and parsed model responses of one accepted candidate: plan=request 1, draft=2, repair=3, expand=4 (first of three), review=7. review_input contains synthetic persona values. plan_repair_* is a static hypothetical example; that call is not reached with max_plan_attempts=1."
+}

@@ -1,0 +1,283 @@
+{
+  "draft_version": 1,
+  "segments": [
+    {
+      "sentence_id": "S1",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "heading",
+      "text": "현재 증상"
+    },
+    {
+      "sentence_id": "S2",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "question",
+      "text": "증상은 언제부터 시작되었나요?"
+    },
+    {
+      "sentence_id": "S3",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "answer",
+      "text": "환자는 9월 5일부터 지속적으로 두통을 경험하고 있으며, 하루에 2~3회 발생합니다."
+    },
+    {
+      "sentence_id": "S4",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "question",
+      "text": "두통의 강도와 빈도는 어떤가요?"
+    },
+    {
+      "sentence_id": "S5",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "answer",
+      "text": "두통의 강도는 중간 정도이며, 스트레스를 받을 때 더 심해집니다."
+    },
+    {
+      "sentence_id": "S6",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "question",
+      "text": "어떤 조건에서 증상이 악화되거나 완화되나요?"
+    },
+    {
+      "sentence_id": "S7",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "answer",
+      "text": "두통은 스트레스를 받을 때 더 심해지며, 평소보다 집중력이 떨어지는 효과를 느낍니다."
+    },
+    {
+      "sentence_id": "S8",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "question",
+      "text": "증상으로 인해 기능 제한이 있나요?"
+    },
+    {
+      "sentence_id": "S9",
+      "section_id": "spec_1",
+      "scene_id": "SC1",
+      "kind": "answer",
+      "text": "두통으로 인해 업무 집중이 어려워지고 일상생활에 지장이 있습니다."
+    },
+    {
+      "sentence_id": "S10",
+      "section_id": "spec_2",
+      "scene_id": "SC2",
+      "kind": "heading",
+      "text": "과거력"
+    },
+    {
+      "sentence_id": "S11",
+      "section_id": "spec_2",
+      "scene_id": "SC2",
+      "kind": "question",
+      "text": "기저질환이나 수술 경험이 있나요?"
+    },
+    {
+      "sentence_id": "S12",
+      "section_id": "spec_2",
+      "scene_id": "SC2",
+      "kind": "answer",
+      "text": "환자는 고혈압으로 5년간 치료를 받았으며, 최근에는 약물 복용을 중단한 상태입니다."
+    },
+    {
+      "sentence_id": "S13",
+      "section_id": "spec_2",
+      "scene_id": "SC2",
+      "kind": "question",
+      "text": "이전에 수술을 받은 적이 있나요?"
+    },
+    {
+      "sentence_id": "S14",
+      "section_id": "spec_2",
+      "scene_id": "SC2",
+      "kind": "answer",
+      "text": "이전 수술 이력은 없으며, 현재 건강 상태는 양호한 편입니다."
+    },
+    {
+      "sentence_id": "S15",
+      "section_id": "spec_3",
+      "scene_id": "SC3",
+      "kind": "heading",
+      "text": "약물과 알레르기"
+    },
+    {
+      "sentence_id": "S16",
+      "section_id": "spec_3",
+      "scene_id": "SC3",
+      "kind": "question",
+      "text": "현재 복용하고 있는 약이 있나요?"
+    },
+    {
+      "sentence_id": "S17",
+      "section_id": "spec_3",
+      "scene_id": "SC3",
+      "kind": "answer",
+      "text": "환자는 매일 아세트아미노펜을 복용하고 있으며, 이는 진통제의 일종입니다."
+    },
+    {
+      "sentence_id": "S18",
+      "section_id": "spec_3",
+      "scene_id": "SC3",
+      "kind": "question",
+      "text": "복용하는 약물의 목적은 무엇인가요?"
+    },
+    {
+      "sentence_id": "S19",
+      "section_id": "spec_3",
+      "scene_id": "SC3",
+      "kind": "answer",
+      "text": "두통 완화를 위한 목적입니다."
+    },
+    {
+      "sentence_id": "S20",
+      "section_id": "spec_3",
+      "scene_id": "SC3",
+      "kind": "question",
+      "text": "알레르기가 있나요?"
+    },
+    {
+      "sentence_id": "S21",
+      "section_id": "spec_3",
+      "scene_id": "SC3",
+      "kind": "answer",
+      "text": "알레르기가 없으며, 과거에 약물 반응 경험도 없습니다."
+    },
+    {
+      "sentence_id": "S22",
+      "section_id": "spec_4",
+      "scene_id": "SC4",
+      "kind": "heading",
+      "text": "생활습관"
+    },
+    {
+      "sentence_id": "S23",
+      "section_id": "spec_4",
+      "scene_id": "SC4",
+      "kind": "question",
+      "text": "평소 수면 패턴은 어떤가요?"
+    },
+    {
+      "sentence_id": "S24",
+      "section_id": "spec_4",
+      "scene_id": "SC4",
+      "kind": "answer",
+      "text": "환자는 평일에 7시간 정도 수면을 취하며, 주말에는 8시간 이상 자는 경향이 있습니다."
+    },
+    {
+      "sentence_id": "S25",
+      "section_id": "spec_4",
+      "scene_id": "SC4",
+      "kind": "question",
+      "text": "식사 패턴은 어떤가요?"
+    },
+    {
+      "sentence_id": "S26",
+      "section_id": "spec_4",
+      "scene_id": "SC4",
+      "kind": "answer",
+      "text": "최근에는 식사 시간이 불규칙해지고 있으며, 주로 외식을 하는 편입니다."
+    },
+    {
+      "sentence_id": "S27",
+      "section_id": "spec_4",
+      "scene_id": "SC4",
+      "kind": "question",
+      "text": "최근 변화가 있나요?"
+    },
+    {
+      "sentence_id": "S28",
+      "section_id": "spec_4",
+      "scene_id": "SC4",
+      "kind": "answer",
+      "text": "식사 패턴의 변화가 있으며, 규칙적인 식사를 하지 못하고 있습니다."
+    }
+  ],
+  "refs": [
+    {
+      "ref_id": "C1",
+      "entity_id": "E1",
+      "surface": "환자",
+      "kind": "role"
+    },
+    {
+      "ref_id": "C2",
+      "entity_id": "E2",
+      "surface": "환자의 생년월일",
+      "kind": "demonstrative"
+    },
+    {
+      "ref_id": "C3",
+      "entity_id": "E3",
+      "surface": "공공기관",
+      "kind": "role"
+    },
+    {
+      "ref_id": "C4",
+      "entity_id": "E4",
+      "surface": "주소 정보",
+      "kind": "demonstrative"
+    },
+    {
+      "ref_id": "C5",
+      "entity_id": "E5",
+      "surface": "기관",
+      "kind": "role"
+    },
+    {
+      "ref_id": "C6",
+      "entity_id": "E6",
+      "surface": "기관 주소",
+      "kind": "demonstrative"
+    }
+  ],
+  "relation_evidence": [
+    {
+      "relation_id": "R1",
+      "evidence_groups": [
+        [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "S9"
+        ]
+      ]
+    },
+    {
+      "relation_id": "R2",
+      "evidence_groups": [
+        [
+          "S10",
+          "S11",
+          "S12",
+          "S13",
+          "S14"
+        ]
+      ]
+    },
+    {
+      "relation_id": "R3",
+      "evidence_groups": [
+        [
+          "S15",
+          "S16",
+          "S17",
+          "S18",
+          "S19",
+          "S20",
+          "S21"
+        ]
+      ]
+    }
+  ]
+}
