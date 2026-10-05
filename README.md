@@ -402,7 +402,7 @@ relation_pipeline/
 └── offline.py              오프라인 모의 응답
 assets/        문서 타입 catalog, 관계 ontology, 등록 참고 인물
 tests/         단위·통합 테스트
-experiments/   비교 실험 스크립트와 결과
+experiments/   타입 기준 문서를 다시 만드는 스크립트
 examples/      호출별 입력, 프롬프트, 출력 예시
 docs/          문서 타입별 작성 기준
 ```

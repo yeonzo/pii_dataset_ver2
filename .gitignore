@@ -7,3 +7,13 @@ output/
 *.egg-info/
 _archive/
 .pytest_cache/
+
+# Not part of the shared repository: past experiment snapshots, old smoke configs and their test.
+experiments/*
+!experiments/__init__.py
+!experiments/export_document_specs.py
+config_*_smoke.json
+!config_cross_relation_smoke.json
+examples/repair_payload_compression.json
+tests/test_generation_comparison.py
+config_smoke_pass.json

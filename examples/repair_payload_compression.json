@@ -1,7 +1,0 @@
-{
-  "source_request": "v2 support request_00012",
-  "old_utf8_bytes": 956083,
-  "new_utf8_bytes": 79313,
-  "api_call": false,
-  "note": "Same archived diagnosis and failed draft; compact representation preserves errors/targets."
-}
